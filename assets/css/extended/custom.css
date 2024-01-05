@@ -1,0 +1,91 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+
+:root {
+    --project-overlay-bg: rgba(255, 255, 255, 85%);
+}
+
+.dark {
+    --project-overlay-bg: rgba(29, 30, 32, 85%);
+}
+
+.project {
+    position: relative;
+    width: calc(100%/3 - 1*0.5rem);
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.project-img {
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: .2s transform ease-in-out,.2s opacity ease-in-out;
+}
+
+.project-overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-overlay:hover + .project-img {
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 60%;;
+    transition: .2s all ease-in-out;
+    opacity: 0%;
+    width: 100%;
+    background: var(--project-overlay-bg);
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.project-text hr {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-overlay:hover .project-text {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.project-header {
+    font-weight: bold;
+    background: rgba();
+}
+
+.project-header-text {
+    
+}
+
+.project-description { 
+    padding-top: 0.25rem;
+    font-size: 0.9rem;
+    transition: .2s all ease-in-out;
+    height: 50%;
+}
+
+.project-overlay:hover .project-description {
+}
