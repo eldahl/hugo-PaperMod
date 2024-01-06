@@ -6,56 +6,93 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 :root {
     --project-overlay-bg: rgba(255, 255, 255, 85%);
+    --projects-width-columns: 4;
+    --projects-width-base: 100%;
+    --gallery-flexbox-justify: space-between;
+    --primary-rgb: 30, 30, 30;
 }
 
 .dark {
     --project-overlay-bg: rgba(29, 30, 32, 85%);
+    --primary-rgb: 218, 218, 219;
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --projects-width-columns: 1;
+        --projects-width-base: 90%;
+        --gallery-flexbox-justify: center;
+    }
+    
+    .project {
+        margin-top: var(--gap);
+    }
+}
+
+.project-gallery {
+    margin: 0.5rem 0 1rem 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--gallery-flexbox-justify);
+    align-items: center;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
 }
 
 .project {
     position: relative;
-    width: calc(100%/3 - 1*0.5rem);
+    max-width: var(--projects-width-base);
+    flex: 1;
+    flex-basis: calc(var(--projects-width-base)/var(--projects-width-columns));
 }
 
-.project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 0.5rem;
-}
-
-.project-img {
+.project-content {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
     border-radius: 4px;
-    margin: 0.5rem 0;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    transition: .2s transform ease-in-out,.2s opacity ease-in-out;
+    overflow: hidden;
+    
+
+    transition: .2s all ease-in-out;
+}
+
+.project-content:hover {
+    
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 20px 8px rgba(var(--primary-rgb), 0.25);
+    
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.project-content:hover .project-overlay {
+    opacity: 100%;
 }
 
 .project-overlay {
     position: absolute;
-    z-index: 1;
     width: 100%;
     height: 100%;
+    z-index: 1;
     display: flex;
     align-items: flex-end;
-}
-
-.project-overlay:hover + .project-img {
-    transform: scale(1.1);
-    z-index: -1;
+    opacity: 0%;
+    transition: .2s all ease-in-out;
 }
 
 .project-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 60%;;
-    transition: .2s all ease-in-out;
-    opacity: 0%;
+    height: 60%;
     width: 100%;
+    transition: .2s all ease-in-out;
     background: var(--project-overlay-bg);
 
+    border: 2px solid var(--primary);
+    
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -66,26 +103,14 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     margin-bottom: 0;
 }
 
-.project-overlay:hover .project-text {
-    transform: scale(1.1);
-    opacity: 100%;
-}
 
 .project-header {
     font-weight: bold;
     background: rgba();
 }
 
-.project-header-text {
-    
-}
 
 .project-description { 
     padding-top: 0.25rem;
     font-size: 0.9rem;
-    transition: .2s all ease-in-out;
-    height: 50%;
-}
-
-.project-overlay:hover .project-description {
 }
