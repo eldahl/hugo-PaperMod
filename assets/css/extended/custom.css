@@ -29,6 +29,18 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     }
 }
 
+.logo {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    background-color: var(--entry);
+    border-radius: var(--radius);
+}
+
 .project-gallery {
     margin: 0.5rem 0 1rem 0;
 
@@ -88,7 +100,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     justify-content: flex-start;
     height: 60%;
     width: 100%;
-    transition: .2s all ease-in-out;
     background: var(--project-overlay-bg);
 
     border-top: 2px solid var(--primary);
