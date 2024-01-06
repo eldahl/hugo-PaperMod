@@ -59,6 +59,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     flex-basis: calc(var(--projects-width-base)/var(--projects-width-columns) - 1rem);
 }
 
+.project:focus {
+    outline: none;
+}
+
 .project-content {
     position: relative;
     width: fit-content;
@@ -83,7 +87,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .project:hover .project-overlay {
     opacity: 100%;
 }
-
 
 .project-overlay {
     position: absolute;
