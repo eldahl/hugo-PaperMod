@@ -7,83 +7,20 @@
         {{ .Content | markdownify }}
     </div>
     <div class="project-gallery">
-        <a href="{{ .Project1Href }}" class="project">
+        {{- range .projectParams }}
+        <a href="{{ .href }}" class="project">
             <div class="project-content">
                 <div class="project-overlay">
                     <div class="project-text">
-                        <p class="project-header">{{ .Project1Header }}</p>
+                        <p class="project-header">{{ .header }}</p>
                         <hr></hr>
-                        <p class="project-description">{{ .Project1Description }}</p>
+                        <p class="project-description">{{ .description }}</p>
                     </div>
                 </div>
-                <img class="project-img" src={{ .Project1ImgPath }}></img>
+                <img class="project-img" src={{ .imgPath }}></img>
             </div>
-        </a>
-
-        <a href="{{ .Project2Href }}" class="project">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <div class="project-text">
-                        <p class="project-header">{{ .Project2Header }}</p>
-                        <hr></hr>
-                        <p class="project-description">{{ .Project2Description }}</p>
-                    </div>
-                </div>
-                <img class="project-img" src={{ .Project2ImgPath }}></img>
-            </div>
-        </a>
-        
-        <a href="{{ .Project3Href }}" class="project">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <div class="project-text">
-                        <p class="project-header">{{ .Project3Header }}</p>
-                        <hr></hr>
-                        <p class="project-description">{{ .Project3Description }}</p>
-                    </div>
-                </div>
-                <img class="project-img" src={{ .Project3ImgPath }}></img>
-            </div>
-        </a>
-        
-        <a href="{{ .Project4Href }}" class="project">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <div class="project-text">
-                        <p class="project-header">{{ .Project4Header }}</p>
-                        <hr></hr>
-                        <p class="project-description">{{ .Project4Description }}</p>
-                    </div>
-                </div>
-                <img class="project-img" src={{ .Project4ImgPath }}></img>
-            </div>
-        </a>
-        
-        <a href="{{ .Project5Href }}" class="project">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <div class="project-text">
-                        <p class="project-header">{{ .Project5Header }}</p>
-                        <hr></hr>
-                        <p class="project-description">{{ .Project5Description }}</p>
-                    </div>
-                </div>
-                <img class="project-img" src={{ .Project5ImgPath }}></img>
-            </div>
-        </a>
-        
-        <a href="{{ .Project6Href }}" class="project">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <div class="project-text">
-                        <p class="project-header">{{ .Project6Header }}</p>
-                        <hr></hr>
-                        <p class="project-description">{{ .Project6Description }}</p>
-                    </div>
-                </div>
-                <img class="project-img" src={{ .Project6ImgPath }}></img>
-            </div>
-        </a>
+        </a>           
+        {{- end}}
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
