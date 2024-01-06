@@ -71,17 +71,19 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     transition: .2s all ease-in-out;
 }
 
-.project-content:hover {
+.project:focus-visible .project-content,
+.project:hover .project-content {
     
     box-shadow: 0 0 10px 4px rgba(var(--primary-rgb), 0.25);
     
     transform: scale(1.1);
     z-index: 10;
 }
-
-.project-content:hover .project-overlay {
+.project:focus-visible .project-overlay,
+.project:hover .project-overlay {
     opacity: 100%;
 }
+
 
 .project-overlay {
     position: absolute;
