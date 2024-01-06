@@ -61,7 +61,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .project-content:hover {
     
     border: 2px solid var(--primary);
-    /* box-shadow: 0 0 20px 8px rgba(var(--primary-rgb), 0.25); */
+    box-shadow: 0 0 10px 4px rgba(var(--primary-rgb), 0.25);
     
     transform: scale(1.1);
     z-index: 10;
