@@ -131,3 +131,30 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     padding-top: 0.25rem;
     font-size: 0.9rem;
 }
+
+.article-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    margin: 0 25% 1rem 25%;
+}
+
+.article-section:before,
+.article-section:after {
+    margin-top: 0.5rem;
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.article-section:not(:empty)::before {
+    margin-right: 1rem;
+}
+
+.article-section:not(:empty)::after {
+    margin-left: 1rem;
+}
