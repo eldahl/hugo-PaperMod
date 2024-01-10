@@ -8,7 +8,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     --project-overlay-bg: rgba(255, 255, 255, 85%);
     --projects-width-columns: 3;
     --projects-width-base: 100%;
-    --gallery-flexbox-justify: space-between;
+    --gallery-flexbox-justify: flex-start;
     --primary-rgb: 30, 30, 30;
 }
 
