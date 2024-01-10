@@ -10,11 +10,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     --projects-width-base: 100%;
     --gallery-flexbox-justify: flex-start;
     --primary-rgb: 30, 30, 30;
+    --box-shadow-alpha: 0.1;
 }
 
 .dark {
     --project-overlay-bg: rgba(29, 30, 32, 85%);
     --primary-rgb: 218, 218, 219;
+    --box-shadow-alpha: 0.2;
 }
 
 @media screen and (max-width: 768px) {
@@ -40,6 +42,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     justify-content: center;
     background-color: var(--entry);
     border-radius: var(--radius);
+    box-shadow: 0 4px 6px 1px rgba(var(--primary-rgb), var(--box-shadow-alpha));
+}
+
+.post-entry {
+    box-shadow: 0 4px 6px 1px rgba(var(--primary-rgb), var(--box-shadow-alpha));
 }
 
 .project-gallery {
@@ -63,6 +70,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     outline: none;
 }
 
+.dark div.project-content {
+    box-shadow: 0 0 0px 0px rgba(var(--primary-rgb), 0.12);
+}
 .project-content {
     position: relative;
     width: fit-content;
@@ -70,15 +80,19 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     border-radius: 4px;
     overflow: hidden;
     
-    box-shadow: 0 0 10px 4px rgba(var(--primary-rgb), 0.25);
+    box-shadow: 0 0 16px 4px rgba(var(--primary-rgb), 0.2);
 
     transition: .2s all ease-in-out;
 }
 
+.dark .project:focus-visible div.project-content,
+.dark .project:hover div.project-content {
+    box-shadow: 0 0 12px 4px rgba(var(--primary-rgb), calc(0.22));
+}
 .project:focus-visible .project-content,
 .project:hover .project-content {
     
-    box-shadow: 0 0 10px 4px rgba(var(--primary-rgb), 0.25);
+    box-shadow: 0 0 16px 6px rgba(var(--primary-rgb), calc(0.3));
     
     transform: scale(1.1);
     z-index: 10;
