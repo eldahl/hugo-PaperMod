@@ -52,6 +52,8 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .project-gallery {
     margin: 0.5rem 0 1.5rem 0;
 
+    height: fit-content;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: var(--gallery-flexbox-justify);
@@ -64,6 +66,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     position: relative;
     flex: 0 1;
     flex-basis: calc(var(--projects-width-base)/var(--projects-width-columns) - 1rem);
+    align-self: stretch;
 }
 
 .project:focus {
@@ -76,13 +79,19 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .project-content {
     position: relative;
     width: fit-content;
-    height: fit-content;
+    height: 100%;
     border-radius: 4px;
-    overflow: hidden;
-    
-    box-shadow: 0 0 16px 4px rgba(var(--primary-rgb), 0.2);
 
     transition: .2s all ease-in-out;
+}
+
+.project-img {
+    box-shadow: 0 0 16px 4px rgba(var(--primary-rgb), 0.2);
+    transition: .2s all ease-in-out;
+}
+.project:focus-visible .project-img,
+.project:hover .project-img {
+    box-shadow: none;
 }
 
 .dark .project:focus-visible div.project-content,
@@ -111,6 +120,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     align-items: flex-end;
     opacity: 0%;
     transition: .2s all ease-in-out;
+    overflow: hidden;
 }
 
 .project-text {

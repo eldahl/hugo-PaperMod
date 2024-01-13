@@ -12,12 +12,12 @@
             <div class="project-content">
                 <div class="project-overlay">
                     <div class="project-text">
-                        <p class="project-header">{{ .header }}</p>
+                        <p style="font-size: {{ .headerSize }};" class="project-header">{{ .header }}</p>
                         <hr></hr>
-                        <p class="project-description">{{ .description }}</p>
+                        <p style="font-size: {{ .descSize }};" class="project-description">{{ .description }}</p>
                     </div>
                 </div>
-                <img class="project-img" src={{ .imgPath }}></img>
+                <img {{ if (eq .imgStretch true) }} style="height: 100%;" {{ end }} class="project-img" src={{ .imgPath }}></img>
             </div>
         </a>           
         {{- end}}
