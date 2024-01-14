@@ -11,6 +11,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     --gallery-flexbox-justify: flex-start;
     --primary-rgb: 30, 30, 30;
     --box-shadow-alpha: 0.1;
+    --projects-height: calc(var(--main-width)/var(--projects-width-columns) - 1rem);
 }
 
 .dark {
@@ -22,8 +23,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 @media screen and (max-width: 768px) {
     :root {
         --projects-width-columns: 1;
-        --projects-width-base: 90%;
+        --projects-width-base: 90vw;
         --gallery-flexbox-justify: center;
+        --projects-height: calc(90vw - 1rem);
     }
     
     .project {
@@ -64,7 +66,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .project {
     position: relative;
-    min-height: calc(var(--main-width)/var(--projects-width-columns) - 1rem);
+    min-height: var(--projects-height);
     flex: 0 1;
     flex-basis: calc(var(--projects-width-base)/var(--projects-width-columns) - 1rem);
     align-self: stretch;
