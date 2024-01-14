@@ -64,6 +64,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .project {
     position: relative;
+    min-height: calc(var(--main-width)/var(--projects-width-columns) - 1rem);
     flex: 0 1;
     flex-basis: calc(var(--projects-width-base)/var(--projects-width-columns) - 1rem);
     align-self: stretch;
