@@ -17,7 +17,11 @@
                         <p style="font-size: {{ .descSize }};" class="project-description">{{ .description }}</p>
                     </div>
                 </div>
-                <img {{ if (eq .imgStretch true) }} style="height: 100%;" {{ end }} class="project-img" src={{ .imgPath }}></img>
+                <div class="img-wrapper">
+                    <div {{ if (eq .imgStretch true) }} style="flex-basis: 0;" {{ end }} class="img-spacer"></div>
+                    <img {{ if (eq .imgStretch true) }} style="flex-basis: 100%;" {{ end }} class="project-img" src={{ .imgPath }}></img>
+                    <div {{ if (eq .imgStretch true) }} style="flex-basis: 0;" {{ end }} class="img-spacer"></div>
+                </div>
             </div>
         </a>           
         {{- end}}
