@@ -72,10 +72,6 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     align-self: stretch;
 }
 
-.project:focus {
-    outline: none;
-}
-
 .dark div.project-content {
     box-shadow: 0 0 0px 0px rgba(var(--primary-rgb), 0.12);
 }
@@ -97,8 +93,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     justify-content: flex-start;
 }
 
-.project:focus-visible .img-spacer,
-.project:hover .img-spacer {
+.toggleControl:checked + .project .img-spacer {
     flex-basis: 0;
 }
 .img-spacer {
@@ -111,27 +106,30 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     flex: 0 1 100%;
     transition: .5s flex-basis ease;
 }
-.project:focus-visible .project-img,
-.project:hover .project-img {
+
+.toggleControl:checked + .project .project-img {
     box-shadow: none;
     flex-basis: 0;
 }
 
-.dark .project:focus-visible div.project-content,
-.dark .project:hover div.project-content {
+.dark .toggleControl:checked + .project div.project-content {
     box-shadow: 0 0 12px 4px rgba(var(--primary-rgb), calc(0.22));
 }
-.project:focus-visible .project-content,
-.project:hover .project-content {
+
+.toggleControl:checked + .project .project-content {
     
     box-shadow: 0 0 16px 6px rgba(var(--primary-rgb), calc(0.3));
     
     transform: scale(1.1);
     z-index: 10;
 }
-.project:focus-visible .project-overlay,
-.project:hover .project-overlay {
+
+.toggleControl:checked + .project .project-overlay {
     opacity: 100%;
+}
+
+.toggleControl:checked + .project .project-text {
+    pointer-events: auto;
 }
 
 .project-overlay {
@@ -158,6 +156,8 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+
+    pointer-events: none;
 }
 
 .project-text hr {
@@ -204,4 +204,8 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .article-section:not(:empty)::after {
     margin-left: 1rem;
+}
+
+.toggleControl {
+    display: none;
 }
