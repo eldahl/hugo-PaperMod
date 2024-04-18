@@ -9,6 +9,24 @@
     {{- partial "head.html" . }}
 </head>
 
+<script>
+    // Unchecks all other project checkboxes when a new checkbox is checked
+    function AddUncheckListener() {
+        const checkboxes = document.querySelectorAll('.toggleControl');
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('change', function() {
+                if(checkbox.checked) {
+                    checkboxes.forEach(function(other) {
+                        if(other !== checkbox) {
+                            other.checked = false;
+                        }
+                    });
+                }
+            });
+        });
+    }
+</script>
+
 <body class="
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
 {{- print "list" -}}
@@ -16,7 +34,7 @@
 {{- if eq site.Params.defaultTheme `dark` -}}
 {{- print " dark" }}
 {{- end -}}
-" id="top">
+" id="top" onload="AddUncheckListener()">
     {{- partialCached "header.html" . .Page -}}
     <main class="main">
         {{- block "main" . }}{{ end }}
