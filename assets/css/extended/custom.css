@@ -12,12 +12,15 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     --primary-rgb: 30, 30, 30;
     --box-shadow-alpha: 0.1;
     --projects-height: calc(var(--main-width)/var(--projects-width-columns) - 1rem);
+
+    --articles-deliniation-color: #000;
 }
 
 .dark {
     --project-overlay-bg: rgba(29, 30, 32, 85%);
     --primary-rgb: 218, 218, 219;
     --box-shadow-alpha: 0.2;
+    --articles-deliniation-color: #808080;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,10 +195,10 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 
 .article-section:before,
 .article-section:after {
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
     content: '';
     flex: 1;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--articles-deliniation-color);
 }
 
 .article-section:not(:empty)::before {
