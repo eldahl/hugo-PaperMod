@@ -199,7 +199,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 .article-section:not(:empty)::before {
-    margin-right: 0rem;
+    margin-right: 1rem;
 }
 
 .article-section:not(:empty)::after {
