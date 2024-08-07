@@ -6,7 +6,7 @@
     <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
-    <div class="project-gallery">
+    <div class="project-list">
         {{- range .projectParams }}
         <input type="checkbox" class="toggleControl" id="toggleControl{{ .projectID }}">
         <label class="project" for="toggleControl{{ .projectID }}">

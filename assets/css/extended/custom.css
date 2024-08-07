@@ -54,7 +54,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     box-shadow: 0 4px 6px 1px rgba(var(--primary-rgb), var(--box-shadow-alpha));
 }
 
-.project-gallery {
+.project-list {
     margin: 0.5rem 0 1.5rem 0;
 
     height: fit-content;
