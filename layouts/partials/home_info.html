@@ -14,23 +14,12 @@
     </div>
     <div class="project-gallery">
         {{- range .projectParams }}
-        <input type="checkbox" class="toggleControl" id="toggleControl{{ .projectID }}">
-        <label class="project" for="toggleControl{{ .projectID }}">
-            <div class="project-content">
-                <div class="project-overlay">
-                    <a href="{{ .href }}"class="project-text">
-                        <p style="font-size: {{ .headerSize }};" class="project-header">{{ .header }}</p>
-                        <hr></hr>
-                        <p style="font-size: {{ .descSize }};" class="project-description">{{ .description }}</p>
-                    </a>
-                </div>
-                <div class="img-wrapper">
-                    <div {{ if (eq .imgStretch true) }} style="flex-basis: 0;" {{ end }} class="img-spacer"></div>
-                    <img {{ if (eq .imgStretch true) }} style="flex-basis: 100%;" {{ end }} class="project-img" src={{ .imgPath }}></img>
-                    <div {{ if (eq .imgStretch true) }} style="flex-basis: 0;" {{ end }} class="img-spacer"></div>
-                </div>
+        <div class="project">
+            <div class="project-img-wrapper">
+                <img style="" class="project-img" src={{ .imgPath }}></img>
             </div>
-        </label>
+            <div data="{{ .href }}" class="github-pinner flat" style="visibility: hidden;"></div>
+        </div>
         {{- end}}
     </div>
     <footer class="entry-footer">
