@@ -6,19 +6,23 @@
     <div class="entry-content">
         {{ .Content | markdownify }}
     </div>
+    {{ partial "gh_profile.html" }}
+    <!--
     <div>
         {{ with resources.Get "js/GitHubPinner.js" }}
         <script src="{{ .RelPermalink }}"></script>
         {{ end }}
         <div data="https://github.com/eldahl" class="github-pinner flat" style="visibility: hidden;"></div>
     </div>
+    -->
     <div class="project-gallery">
         {{- range .projectParams }}
         <div class="project">
             <div class="project-img-wrapper">
                 <img style="" class="project-img" src={{ .imgPath }}></img>
             </div>
-            <div data="{{ .href }}" class="github-pinner flat" style="visibility: hidden;"></div>
+            {{ partial "gh_repo.html" (dict "projectData" .) }}
+            <!--<div data="{{ .href }}" class="github-pinner flat" style="visibility: hidden;"></div>-->
         </div>
         {{- end}}
     </div>
