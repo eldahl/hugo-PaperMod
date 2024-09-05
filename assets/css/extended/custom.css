@@ -23,7 +23,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 @media screen and (max-width: 768px) {
     :root {
         --projects-width-columns: 1;
-        --projects-width-base: 90vw;
+        --projects-width-base: 100%;
         --gallery-flexbox-justify: center;
         --projects-height: calc(90vw - 1rem);
     }
