@@ -59,7 +59,7 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    row-gap: 1rem;
+    row-gap: var(--gap);
 }
 
 .project {
@@ -420,998 +420,1924 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 /* Github-Pinner language colors */
 /* See https://github.com/ozh/github-colors */
 .lang-1 {
-    color: #814CCC;
+	background-color: #814CCC !important;
 }
 .lang-2 {
-    color: #E8274B;
+	background-color: #38761D !important;
 }
 .lang-3 {
-    color: #882B0F;
+	background-color: #004289 !important;
 }
 .lang-4 {
-    color: #02f88c;
+	background-color: #E8274B !important;
 }
 .lang-5 {
-    color: #315665;
+	background-color: #555e25 !important;
 }
 .lang-6 {
-    color: #B9D9FF;
+	background-color: #882B0F !important;
 }
 .lang-7 {
-    color: #64C800;
+	background-color: #02f88c !important;
 }
 .lang-8 {
-    /* No color */
+	background-color: #800000 !important;
 }
 .lang-9 {
-    color: #E6EFBB;
+	background-color: #fa0f00 !important;
 }
 .lang-10 {
-    color: #9DC3FF;
+	background-color: #315665 !important;
 }
 .lang-11 {
-    /* No color */
+	background-color: #B9D9FF !important;
 }
 .lang-12 {
-    color: #2ACCA8;
+	background-color: #34EB6B !important;
 }
 .lang-13 {
-    color: #5A8164;
+	background-color: #3AA2B5 !important;
 }
 .lang-14 {
-    /* No color */
+	background-color: #64C800 !important;
 }
 .lang-15 {
-    color: #101F1F;
+	background-color: #0D597F !important;
 }
 .lang-16 {
-    color: #aa2afe;
+	background-color: #A89663 !important;
 }
 .lang-17 {
-    color: #bd79d1;
+	background-color: #E6EFBB !important;
 }
 .lang-18 {
-    color: #6a40fd;
+	background-color: #C7D7DC !important;
 }
 .lang-19 {
-    color: #a957b0;
+	background-color: #A9157E !important;
 }
 .lang-20 {
-    color: #6E4C13;
+	background-color: #ff269e !important;
 }
 .lang-21 {
-    color: #1ac620;
+	background-color: #9DC3FF !important;
 }
 .lang-22 {
-    /* No color */
+	background-color: #d12127 !important;
 }
 .lang-23 {
-    color: #6594b9;
+	background-color: #1797c0 !important;
 }
 .lang-24 {
-    color: #1C3552;
+	background-color: #2ACCA8 !important;
 }
 .lang-25 {
-    /* No color */
+	background-color: #5A8164 !important;
 }
 .lang-26 {
-    color: #FF5000;
+	background-color: #0B3D91 !important;
 }
 .lang-27 {
-    color: #C1F12E;
+	background-color: #101F1F !important;
 }
 .lang-28 {
-    /* No color */
+	background-color: #aa2afe !important;
 }
 .lang-29 {
-    /* No color */
+	background-color: #73a0c5 !important;
 }
 .lang-30 {
-    /* No color */
 }
 .lang-31 {
-    /* No color */
+	background-color: #9400ff !important;
 }
 .lang-32 {
-    color: #cd6400;
+	background-color: #a957b0 !important;
 }
 .lang-33 {
-    /* No color */
+	background-color: #6E4C13 !important;
 }
 .lang-34 {
-    color: #d4bec1;
+	background-color: #ff5a03 !important;
 }
 .lang-35 {
-    color: #2F2530;
+	background-color: #ff0000 !important;
 }
 .lang-36 {
-    /* No color */
+	background-color: #1ac620 !important;
 }
 .lang-37 {
-    /* No color */
+	background-color: #9CC134 !important;
 }
 .lang-38 {
-    color: #555555;
+	background-color: #6594b9 !important;
 }
 .lang-39 {
-    color: #178600;
+	background-color: #1C3552 !important;
 }
 .lang-40 {
-    color: #f34b7d;
+	background-color: #0040FF !important;
 }
 .lang-41 {
-    /* No color */
+	background-color: #c30e9b !important;
 }
 .lang-42 {
-    /* No color */
+	background-color: #00e4ff !important;
 }
 .lang-43 {
-    /* No color */
+	background-color: #FF5000 !important;
 }
 .lang-44 {
-    color: #dfa535;
+	background-color: #ff0000 !important;
 }
 .lang-45 {
-    color: #8dc63f;
+	background-color: #C1F12E !important;
 }
 .lang-46 {
-    /* No color */
+	background-color: #a52f4e !important;
 }
 .lang-47 {
-    /* No color */
 }
 .lang-48 {
-    color: #ccccff;
+	background-color: #15A13C !important;
 }
 .lang-49 {
-    color: #db901e;
+	background-color: #778899 !important;
 }
 .lang-50 {
-    color: #3F85AF;
+	background-color: #519aba !important;
 }
 .lang-51 {
-    color: #E4E6F3;
+	background-color: #5562ac !important;
 }
 .lang-52 {
-    /* No color */
+	background-color: #6A463F !important;
 }
 .lang-53 {
-    color: #db5855;
+	background-color: #00bce4 !important;
 }
 .lang-54 {
-    /* No color */
+	background-color: #f7523f !important;
 }
 .lang-55 {
-    /* No color */
+	background-color: #00FFAE !important;
 }
 .lang-56 {
-    color: #244776;
+	background-color: #cd6400 !important;
 }
 .lang-57 {
-    color: #ed2cd6;
+	background-color: #12223c !important;
 }
 .lang-58 {
-    /* No color */
+	background-color: #12223c !important;
 }
 .lang-59 {
-    color: #3fb68b;
+	background-color: #d4bec1 !important;
 }
 .lang-60 {
-    color: #B0CE4E;
+	background-color: #c80fa0 !important;
 }
 .lang-61 {
-    /* No color */
+	background-color: #2b7067 !important;
 }
 .lang-62 {
-    /* No color */
+	background-color: #2F2530 !important;
 }
 .lang-63 {
-    color: #776791;
+	background-color: #66AABB !important;
 }
 .lang-64 {
-    /* No color */
+	background-color: #662D91 !important;
 }
 .lang-65 {
-    /* No color */
+	background-color: #ffd539 !important;
 }
 .lang-66 {
-    /* No color */
+	background-color: #555555 !important;
 }
 .lang-67 {
-    color: #563d7c;
+	background-color: #178600 !important;
 }
 .lang-68 {
-    color: #3A4E3A;
+	background-color: #f34b7d !important;
 }
 .lang-69 {
-    /* No color */
 }
 .lang-70 {
-    /* No color */
+	background-color: #483465 !important;
 }
 .lang-71 {
-    /* No color */
+	background-color: #22b638 !important;
 }
 .lang-72 {
-    color: #ba595e;
+	background-color: #00ef8b !important;
 }
 .lang-73 {
-    color: #00B4AB;
+	background-color: #ff4a48 !important;
 }
 .lang-74 {
-    color: #003a52;
+	background-color: #ff4a48 !important;
 }
 .lang-75 {
-    /* No color */
+	background-color: #3be133 !important;
 }
 .lang-76 {
-    color: #447265;
+	background-color: #0092d1 !important;
 }
 .lang-77 {
-    color: #cca760;
+	background-color: #c42727 !important;
 }
 .lang-78 {
-    /* No color */
+	background-color: #222222 !important;
 }
 .lang-79 {
-    color: #6c616e;
 }
 .lang-80 {
-    color: #ccce35;
+	background-color: #dfa535 !important;
 }
 .lang-81 {
-    color: #913960;
+	background-color: #8dc63f !important;
 }
 .lang-82 {
-    color: #8a1267;
 }
 .lang-83 {
-    /* No color */
+	background-color: #3f8000 !important;
 }
 .lang-84 {
-    color: #946d57;
+	background-color: #707575 !important;
 }
 .lang-85 {
-    color: #6e4a7e;
+	background-color: #ccccff !important;
 }
 .lang-86 {
-    color: #60B5CC;
+	background-color: #db901e !important;
 }
 .lang-87 {
-    color: #c065db;
+	background-color: #5546ff !important;
 }
 .lang-88 {
-    color: #FFF4F3;
+	background-color: #6a40fd !important;
 }
 .lang-89 {
-    color: #a78649;
+	background-color: #3F85AF !important;
 }
 .lang-90 {
-    color: #B83998;
+	background-color: #E4E6F3 !important;
 }
 .lang-91 {
-    color: #b845fc;
+	background-color: #00A300 !important;
 }
 .lang-92 {
-    color: #636746;
+	background-color: #db5855 !important;
 }
 .lang-93 {
-    color: #7b9db4;
+	background-color: #0d948f !important;
 }
 .lang-94 {
-    color: #14253c;
+	background-color: #FFA000 !important;
 }
 .lang-95 {
-    /* No color */
+	background-color: #DA3434 !important;
 }
 .lang-96 {
-    /* No color */
 }
 .lang-97 {
-    color: #88ccff;
+	background-color: #140f46 !important;
 }
 .lang-98 {
-    color: #341708;
+	background-color: #244776 !important;
 }
 .lang-99 {
-    color: #4d41b1;
+	background-color: #ed2cd6 !important;
 }
 .lang-100 {
-    color: #0050b2;
+	background-color: #ed2cd6 !important;
 }
 .lang-101 {
-    color: #00cafe;
+	background-color: #F1A42B !important;
 }
 .lang-102 {
-    color: #8fb200;
+	background-color: #3fb68b !important;
 }
 .lang-103 {
-    /* No color */
+	background-color: #B5314C !important;
 }
 .lang-104 {
-    /* No color */
+	background-color: #B0CE4E !important;
 }
 .lang-105 {
-    /* No color */
 }
 .lang-106 {
-    /* No color */
+	background-color: #d0b68c !important;
 }
 .lang-107 {
-    color: #fb855d;
+	background-color: #ead7ac !important;
 }
 .lang-108 {
-    /* No color */
+	background-color: #000100 !important;
 }
 .lang-109 {
-    /* No color */
+	background-color: #244776 !important;
 }
 .lang-110 {
-    /* No color */
+	background-color: #1a1a1a !important;
 }
 .lang-111 {
-    color: #88ccff;
+	background-color: #1a1a1a !important;
 }
 .lang-112 {
-    color: #f0a9f0;
+	background-color: #1a1a1a !important;
 }
 .lang-113 {
-    color: #375eab;
+	background-color: #563d7c !important;
 }
 .lang-114 {
-    color: #88562A;
+	background-color: #237346 !important;
 }
 .lang-115 {
-    color: #82937f;
+	background-color: #3A4E3A !important;
 }
 .lang-116 {
-    /* No color */
+	background-color: #5886E1 !important;
 }
 .lang-117 {
-    color: #79aa7a;
+	background-color: #531242 !important;
 }
 .lang-118 {
-    color: #e69f56;
+	background-color: #00007a !important;
 }
 .lang-119 {
-    /* No color */
 }
 .lang-120 {
-    color: #878787;
+	background-color: #00b3fd !important;
 }
 .lang-121 {
-    color: #0e60e3;
+	background-color: #34c0eb !important;
 }
 .lang-122 {
-    color: #5e5086;
+	background-color: #fedf5b !important;
 }
 .lang-123 {
-    color: #df7900;
+	background-color: #ba595e !important;
 }
 .lang-124 {
-    /* No color */
+	background-color: #526ee8 !important;
 }
 .lang-125 {
-    /* No color */
+	background-color: #FFEC25 !important;
 }
 .lang-126 {
-    color: #e34c26;
+	background-color: #8eff23 !important;
 }
 .lang-127 {
-    color: #7790B2;
+	background-color: #00B4AB !important;
 }
 .lang-128 {
-    /* No color */
+	background-color: #003a52 !important;
 }
 .lang-129 {
-    color: #a3522f;
+	background-color: #D70751 !important;
 }
 .lang-130 {
-    /* No color */
+	background-color: #FBEE96 !important;
 }
 .lang-131 {
-    /* No color */
+	background-color: #dfafff !important;
 }
 .lang-132 {
-    color: #a9188d;
 }
 .lang-133 {
-    color: #078193;
+	background-color: #aace60 !important;
 }
 .lang-134 {
-    color: #FEFE00;
+	background-color: #447265 !important;
 }
 .lang-135 {
-    /* No color */
+	background-color: #384d54 !important;
 }
 .lang-136 {
-    color: #9EEDFF;
+	background-color: #cca760 !important;
 }
 .lang-137 {
-    /* No color */
+	background-color: #e5d559 !important;
 }
 .lang-138 {
-    color: #b07219;
 }
 .lang-139 {
-    /* No color */
+	background-color: #89421e !important;
 }
 .lang-140 {
-    color: #f1e05a;
+	background-color: #6c616e !important;
 }
 .lang-141 {
-    /* No color */
+	background-color: #ccce35 !important;
 }
 .lang-142 {
-    /* No color */
+	background-color: #2af0ff !important;
 }
 .lang-143 {
-    /* No color */
+	background-color: #069406 !important;
 }
 .lang-144 {
-    color: #843179;
+	background-color: #913960 !important;
 }
 .lang-145 {
-    color: #40d47e;
+	background-color: #913960 !important;
 }
 .lang-146 {
-    /* No color */
+	background-color: #8a1267 !important;
 }
 .lang-147 {
-    color: #a270ba;
+	background-color: #001d9d !important;
 }
 .lang-148 {
-    color: #DA5B0B;
+	background-color: #eb8131 !important;
 }
 .lang-149 {
-    color: #F18E33;
+	background-color: #0dffe0 !important;
 }
 .lang-150 {
-    color: #28431f;
+	background-color: #31A7FF !important;
 }
 .lang-151 {
-    /* No color */
+	background-color: #fff1f2 !important;
 }
 .lang-152 {
-    color: #999999;
+	background-color: #4d6977 !important;
 }
 .lang-153 {
-    /* No color */
+	background-color: #a91e50 !important;
 }
 .lang-154 {
-    color: #DBCA00;
+	background-color: #6e4a7e !important;
 }
 .lang-155 {
-    /* No color */
+	background-color: #60B5CC !important;
 }
 .lang-156 {
-    /* No color */
+	background-color: #55BB55 !important;
 }
 .lang-157 {
-    /* No color */
+	background-color: #55BB55 !important;
 }
 .lang-158 {
-    color: #499886;
+	background-color: #c065db !important;
 }
 .lang-159 {
-    color: #185619;
+	background-color: #FFF4F3 !important;
 }
 .lang-160 {
-    /* No color */
+	background-color: #a78649 !important;
 }
 .lang-161 {
-    /* No color */
+	background-color: #B83998 !important;
 }
 .lang-162 {
-    color: #cc9900;
+	background-color: #FF790B !important;
 }
 .lang-163 {
-    color: #652B81;
+	background-color: #b845fc !important;
 }
 .lang-164 {
-    /* No color */
+	background-color: #572e30 !important;
 }
 .lang-165 {
-    color: #3d9970;
+	background-color: #636746 !important;
 }
 .lang-166 {
-    color: #000080;
+	background-color: #7b9db4 !important;
 }
 .lang-167 {
-    /* No color */
+	background-color: #14253c !important;
 }
 .lang-168 {
-    /* No color */
+	background-color: #c37240 !important;
 }
 .lang-169 {
-    /* No color */
+	background-color: #fff3d7 !important;
 }
 .lang-170 {
-    color: #427819;
+	background-color: #FFDDBB !important;
 }
 .lang-171 {
-    /* No color */
+	background-color: #F6B900 !important;
 }
 .lang-172 {
-    color: #f97732;
 }
 .lang-173 {
-    /* No color */
+	background-color: #2f632f !important;
 }
 .lang-174 {
-    color: #e16737;
+	background-color: #4aae47 !important;
 }
 .lang-175 {
-    color: #c4a79c;
+	background-color: #ffcc33 !important;
 }
 .lang-176 {
-    color: #00a6a6;
+	background-color: #88ccff !important;
 }
 .lang-177 {
-    color: #ff2b2b;
+	background-color: #341708 !important;
 }
 .lang-178 {
-    color: #007800;
+	background-color: #4d41b1 !important;
 }
 .lang-179 {
-    color: #8f14e9;
+	background-color: #4d41b1 !important;
 }
 .lang-180 {
-    /* No color */
+	background-color: #141AC9 !important;
 }
 .lang-181 {
-    color: #c7a938;
+	background-color: #0050b2 !important;
 }
 .lang-182 {
-    /* No color */
+	background-color: #00cafe !important;
 }
 .lang-183 {
-    /* No color */
+	background-color: #5f021f !important;
 }
 .lang-184 {
-    /* No color */
+	background-color: #D08CF2 !important;
 }
 .lang-185 {
-    color: #62A8D6;
+	background-color: #71b417 !important;
 }
 .lang-186 {
-    color: #4A76B8;
+	background-color: #FFC766 !important;
 }
 .lang-187 {
-    color: #b7e1f4;
+	background-color: #f49a22 !important;
 }
 .lang-188 {
-    /* No color */
+	background-color: #0000cc !important;
 }
 .lang-189 {
-    /* No color */
+	background-color: #FFCFAB !important;
 }
 .lang-190 {
-    /* No color */
 }
 .lang-191 {
-    color: #28431f;
+	background-color: #355570 !important;
 }
 .lang-192 {
-    color: #990000;
+	background-color: #003058 !important;
 }
 .lang-193 {
-    color: #3d3c6e;
+	background-color: #701516 !important;
 }
 .lang-194 {
-    color: #94B0C7;
+	background-color: #ff6900 !important;
 }
 .lang-195 {
-    color: #0aa0ff;
+	background-color: #63408e !important;
 }
 .lang-196 {
-    color: #747faa;
+	background-color: #d8df39 !important;
 }
 .lang-197 {
-    color: #ff6375;
+	background-color: #fb855d !important;
 }
 .lang-198 {
-    color: #87AED7;
+	background-color: #951531 !important;
 }
 .lang-199 {
-    color: #37775b;
+	background-color: #9400ff !important;
 }
 .lang-200 {
-    color: #009917;
+	background-color: #9400ff !important;
 }
 .lang-201 {
-    color: #7e7eff;
+	background-color: #d20b00 !important;
 }
 .lang-202 {
-    /* No color */
+	background-color: #5B2063 !important;
 }
 .lang-203 {
-    color: #c9df40;
+	background-color: #F44D27 !important;
 }
 .lang-204 {
-    /* No color */
+	background-color: #F44D27 !important;
 }
 .lang-205 {
-    color: #438eff;
+	background-color: #F44D27 !important;
 }
 .lang-206 {
-    color: #6866fb;
+	background-color: #ffaff3 !important;
 }
 .lang-207 {
-    color: #ff0c5a;
+	background-color: #F5835F !important;
 }
 .lang-208 {
-    color: #3be133;
+	background-color: #3178c6 !important;
 }
 .lang-209 {
-    color: #cabbff;
+	background-color: #5686a5 !important;
 }
 .lang-210 {
-    color: #b0b77e;
+	background-color: #c1ac7f !important;
 }
 .lang-211 {
-    /* No color */
+	background-color: #f0a9f0 !important;
 }
 .lang-212 {
-    color: #f7ede0;
+	background-color: #00ADD8 !important;
 }
 .lang-213 {
-    /* No color */
+	background-color: #00ADD8 !important;
 }
 .lang-214 {
-    /* No color */
+	background-color: #00ADD8 !important;
 }
 .lang-215 {
-    /* No color */
+	background-color: #00ADD8 !important;
 }
 .lang-216 {
-    color: #cdd0e3;
+	background-color: #355570 !important;
 }
 .lang-217 {
-    color: #fab738;
+	background-color: #88562A !important;
 }
 .lang-218 {
-    color: #7055b5;
+	background-color: #82937f !important;
 }
 .lang-219 {
-    color: #cc0000;
+	background-color: #615f8b !important;
 }
 .lang-220 {
-    color: #6600cc;
+	background-color: #02303a !important;
 }
 .lang-221 {
-    color: #f3ca0a;
+	background-color: #02303a !important;
 }
 .lang-222 {
-    /* No color */
+	background-color: #ff0000 !important;
 }
 .lang-223 {
-    /* No color */
+	background-color: #e10098 !important;
 }
 .lang-224 {
-    color: #E3F171;
+	background-color: #2596be !important;
 }
 .lang-225 {
-    color: #dbb284;
+	background-color: #4298b8 !important;
 }
 .lang-226 {
-    color: #C76F5B;
+	background-color: #4298b8 !important;
 }
 .lang-227 {
-    color: #0298c3;
+	background-color: #FF6800 !important;
 }
 .lang-228 {
-    color: #0000fb;
+	background-color: #878787 !important;
 }
 .lang-229 {
-    color: #4F5D95;
+	background-color: #ece2a9 !important;
 }
 .lang-230 {
-    /* No color */
+	background-color: #f7931e !important;
 }
 .lang-231 {
-    color: #fcd7de;
+	background-color: #106da9 !important;
 }
 .lang-232 {
-    color: #005390;
+	background-color: #0e60e3 !important;
 }
 .lang-233 {
-    /* No color */
+	background-color: #5e5086 !important;
 }
 .lang-234 {
-    color: #dad8d8;
+	background-color: #df7900 !important;
 }
 .lang-235 {
-    color: #d80074;
+	background-color: #844FBA !important;
 }
 .lang-236 {
-    /* No color */
+	background-color: #dce200 !important;
 }
 .lang-237 {
-    color: #da291c;
+	background-color: #aace60 !important;
 }
 .lang-238 {
-    /* No color */
+	background-color: #9ff8ee !important;
 }
 .lang-239 {
-    color: #8f0f8d;
+	background-color: #ffefaf !important;
 }
 .lang-240 {
-    color: #012456;
+	background-color: #00b171 !important;
 }
 .lang-241 {
-    color: #0096D8;
+	background-color: #308888 !important;
 }
 .lang-242 {
-    color: #74283c;
+	background-color: #e34c26 !important;
 }
 .lang-243 {
-    color: #7fa2a7;
+	background-color: #2e1052 !important;
 }
 .lang-244 {
-    color: #302B6D;
+	background-color: #6e4a7e !important;
 }
 .lang-245 {
-    color: #5a6986;
+	background-color: #701516 !important;
 }
 .lang-246 {
-    color: #1D222D;
+	background-color: #4f5d95 !important;
 }
 .lang-247 {
-    color: #3572A5;
+	background-color: #512be4 !important;
 }
 .lang-248 {
-    /* No color */
+	background-color: #005C9C !important;
 }
 .lang-249 {
-    /* No color */
+	background-color: #f68712 !important;
 }
 .lang-250 {
-    color: #44a51c;
+	background-color: #7790B2 !important;
 }
 .lang-251 {
-    color: #198CE7;
 }
 .lang-252 {
-    color: #22228f;
+	background-color: #ec564c !important;
 }
 .lang-253 {
-    color: #9d5200;
+	background-color: #a3522f !important;
 }
 .lang-254 {
-    color: #77d9fb;
+	background-color: #b30000 !important;
 }
 .lang-255 {
-    color: #fffaa0;
+	background-color: #000000 !important;
 }
 .lang-256 {
-    /* No color */
+	background-color: #0000cc !important;
 }
 .lang-257 {
-    /* No color */
+	background-color: #99AAFF !important;
 }
 .lang-258 {
-    color: #358a5b;
+	background-color: #16cec6 !important;
 }
 .lang-259 {
-    color: #f50000;
 }
 .lang-260 {
-    /* No color */
+	background-color: #d1dbe0 !important;
 }
 .lang-261 {
-    color: #ff7f7f;
 }
 .lang-262 {
-    /* No color */
+	background-color: #264b99 !important;
 }
 .lang-263 {
-    /* No color */
+	background-color: #a9188d !important;
 }
 .lang-264 {
-    color: #0e60e3;
+	background-color: #078193 !important;
 }
 .lang-265 {
-    color: #ecdebe;
+	background-color: #FEFE00 !important;
 }
 .lang-266 {
-    color: #cc0088;
+	background-color: #FEFE00 !important;
 }
 .lang-267 {
-    color: #701516;
+	background-color: #9EEDFF !important;
 }
 .lang-268 {
-    color: #665a4e;
+	background-color: #0886a5 !important;
 }
 .lang-269 {
-    color: #dea584;
+	background-color: #b07219 !important;
 }
 .lang-270 {
-    /* No color */
+	background-color: #d03600 !important;
 }
 .lang-271 {
-    color: #646464;
+	background-color: #b07219 !important;
 }
 .lang-272 {
-    color: #B34936;
+	background-color: #2A6277 !important;
 }
 .lang-273 {
-    color: #c22d40;
+	background-color: #2A6277 !important;
 }
 .lang-274 {
-    color: #1e4aec;
+	background-color: #2A6277 !important;
 }
 .lang-275 {
-    /* No color */
+	background-color: #f1e05a !important;
 }
 .lang-276 {
-    color: #0579aa;
+	background-color: #f1e05a !important;
 }
 .lang-277 {
-    /* No color */
+	background-color: #d90e09 !important;
 }
 .lang-278 {
-    color: #89e051;
+	background-color: #15c213 !important;
 }
 .lang-279 {
-    /* No color */
+	background-color: #21D789 !important;
 }
 .lang-280 {
-    color: #120F14;
+	background-color: #DBCA00 !important;
 }
 .lang-281 {
-    color: #007eff;
+	background-color: #a52a22 !important;
 }
 .lang-282 {
-    /* No color */
+	background-color: #56b3cb !important;
 }
 .lang-283 {
-    color: #596706;
+	background-color: #56b3cb !important;
 }
 .lang-284 {
-    /* No color */
+	background-color: #843179 !important;
 }
 .lang-285 {
-    /* No color */
+	background-color: #c7254e !important;
 }
 .lang-286 {
-    color: #5c7611;
+	background-color: #292929 !important;
 }
 .lang-287 {
-    color: #3F3F3F;
+	background-color: #292929 !important;
 }
 .lang-288 {
-    /* No color */
+	background-color: #267CB9 !important;
 }
 .lang-289 {
-    color: #800000;
+	background-color: #40d47e !important;
 }
 .lang-290 {
-    color: #348a34;
+	background-color: #0c479c !important;
 }
 .lang-291 {
-    color: #b2011d;
+	background-color: #0064bd !important;
 }
 .lang-292 {
-    color: #dc566d;
+	background-color: #a270ba !important;
 }
 .lang-293 {
-    /* No color */
+	background-color: #a270ba !important;
 }
 .lang-294 {
-    color: #46390b;
+	background-color: #DA5B0B !important;
 }
 .lang-295 {
-    color: #ffac45;
+	background-color: #384d54 !important;
 }
 .lang-296 {
-    color: #DAE1C2;
+	background-color: #773b37 !important;
 }
 .lang-297 {
-    color: #e4cc98;
+	background-color: #6f8042 !important;
 }
 .lang-298 {
-    /* No color */
+	background-color: #41adf0 !important;
 }
 .lang-299 {
-    color: #00004c;
+	background-color: #2f4aab !important;
 }
 .lang-300 {
-    color: #3D6117;
+	background-color: #2f4aab !important;
 }
 .lang-301 {
-    /* No color */
+	background-color: #2f4aab !important;
 }
 .lang-302 {
-    color: #A0AA87;
+	background-color: #A97BFF !important;
 }
 .lang-303 {
-    /* No color */
+	background-color: #28430A !important;
 }
 .lang-304 {
-    color: #cf142b;
+	background-color: #1da6e0 !important;
 }
 .lang-305 {
-    /* No color */
+	background-color: #fede06 !important;
 }
 .lang-306 {
-    color: #2b7489;
+	background-color: #2980B9 !important;
 }
 .lang-307 {
-    /* No color */
+	background-color: #999999 !important;
 }
 .lang-308 {
-    /* No color */
+	background-color: #f2a542 !important;
 }
 .lang-309 {
-    /* No color */
 }
 .lang-310 {
-    color: #a54c4d;
 }
 .lang-311 {
-    /* No color */
+	background-color: #1d365d !important;
 }
 .lang-312 {
-    color: #fbe5cd;
+	background-color: #DBCA00 !important;
 }
 .lang-313 {
-    /* No color */
+	background-color: #4C3023 !important;
 }
 .lang-314 {
-    color: #b2b7f8;
+	background-color: #0e74ff !important;
 }
 .lang-315 {
-    color: #adb2cb;
+	background-color: #9ccc7c !important;
 }
 .lang-316 {
-    color: #199f4b;
 }
 .lang-317 {
-    color: #945db7;
+	background-color: #67b8de !important;
 }
 .lang-318 {
-    color: #1F1F1F;
+	background-color: #315665 !important;
 }
 .lang-319 {
-    color: #2c3e50;
+	background-color: #244776 !important;
 }
 .lang-320 {
-    color: #04133b;
+	background-color: #5e5086 !important;
 }
 .lang-321 {
-    /* No color */
+	background-color: #0c5ba5 !important;
 }
 .lang-322 {
-    color: #7582D1;
+	background-color: #499886 !important;
 }
 .lang-323 {
-    color: #4B6BEF;
+	background-color: #185619 !important;
 }
 .lang-324 {
-    color: #403a40;
 }
 .lang-325 {
-    color: #99DA07;
+	background-color: #295b9a !important;
 }
 .lang-326 {
-    /* No color */
+	background-color: #cc9900 !important;
 }
 .lang-327 {
-    color: #5232e7;
+	background-color: #652B81 !important;
 }
 .lang-328 {
-    /* No color */
 }
 .lang-329 {
-    color: #EB8CEB;
+	background-color: #3d9970 !important;
 }
 .lang-330 {
-    /* No color */
+	background-color: #000080 !important;
 }
 .lang-331 {
-    color: #118f9e;
+	background-color: #00A2FF !important;
 }
 .lang-332 {
-    /* No color */
+}
+.lang-333 {
+}
+.lang-334 {
+}
+.lang-335 {
+	background-color: #d8ffff !important;
+}
+.lang-336 {
+	background-color: #427819 !important;
+}
+.lang-337 {
+	background-color: #7e858d !important;
+}
+.lang-338 {
+	background-color: #083fa1 !important;
+}
+.lang-339 {
+	background-color: #42bff2 !important;
+}
+.lang-340 {
+	background-color: #f97732 !important;
+}
+.lang-341 {
+	background-color: #dd1100 !important;
+}
+.lang-342 {
+	background-color: #e16737 !important;
+}
+.lang-343 {
+	background-color: #c4a79c !important;
+}
+.lang-344 {
+	background-color: #00a6a6 !important;
+}
+.lang-345 {
+	background-color: #E22837 !important;
+}
+.lang-346 {
+	background-color: #fcb32c !important;
+}
+.lang-347 {
+	background-color: #ff2b2b !important;
+}
+.lang-348 {
+	background-color: #ff3670 !important;
+}
+.lang-349 {
+	background-color: #007800 !important;
+}
+.lang-350 {
+	background-color: #8f14e9 !important;
+}
+.lang-351 {
+}
+.lang-352 {
+	background-color: #ff1111 !important;
+}
+.lang-353 {
+	background-color: #02b046 !important;
+}
+.lang-354 {
+	background-color: #c7a938 !important;
+}
+.lang-355 {
+	background-color: #3d57c3 !important;
+}
+.lang-356 {
+	background-color: #5EC8DB !important;
+}
+.lang-357 {
+	background-color: #de1d31 !important;
+}
+.lang-358 {
+	background-color: #10253f !important;
+}
+.lang-359 {
+	background-color: #223388 !important;
+}
+.lang-360 {
+}
+.lang-361 {
+	background-color: #ff4c1f !important;
+}
+.lang-362 {
+}
+.lang-363 {
+	background-color: #8D6747 !important;
+}
+.lang-364 {
+}
+.lang-365 {
+	background-color: #ff4585 !important;
+}
+.lang-366 {
+	background-color: #fbb03b !important;
+}
+.lang-367 {
+	background-color: #005daa !important;
+}
+.lang-368 {
+	background-color: #4a137a !important;
+}
+.lang-369 {
+	background-color: #62A8D6 !important;
+}
+.lang-370 {
+	background-color: #4A76B8 !important;
+}
+.lang-371 {
+	background-color: #b7e1f4 !important;
+}
+.lang-372 {
+}
+.lang-373 {
+	background-color: #244963 !important;
+}
+.lang-374 {
+	background-color: #724b3b !important;
+}
+.lang-375 {
+}
+.lang-376 {
+	background-color: #2d004d !important;
+}
+.lang-377 {
+	background-color: #1d2c4e !important;
+}
+.lang-378 {
+}
+.lang-379 {
+	background-color: #28431f !important;
+}
+.lang-380 {
+	background-color: #990000 !important;
+}
+.lang-381 {
+	background-color: #3d3c6e !important;
+}
+.lang-382 {
+	background-color: #94B0C7 !important;
+}
+.lang-383 {
+	background-color: #0aa0ff !important;
+}
+.lang-384 {
+	background-color: #747faa !important;
+}
+.lang-385 {
+	background-color: #ff6375 !important;
+}
+.lang-386 {
+	background-color: #87AED7 !important;
+}
+.lang-387 {
+	background-color: #3ac486 !important;
+}
+.lang-388 {
+	background-color: #009639 !important;
+}
+.lang-389 {
+	background-color: #ffc200 !important;
+}
+.lang-390 {
+	background-color: #009917 !important;
+}
+.lang-391 {
+	background-color: #7e7eff !important;
+}
+.lang-392 {
+	background-color: #00356B !important;
+}
+.lang-393 {
+	background-color: #2f1f49 !important;
+}
+.lang-394 {
+	background-color: #cb3837 !important;
+}
+.lang-395 {
+}
+.lang-396 {
+	background-color: #c9df40 !important;
+}
+.lang-397 {
+	background-color: #9C8AF9 !important;
+}
+.lang-398 {
+	background-color: #3d8137 !important;
+}
+.lang-399 {
+	background-color: #4E9906 !important;
+}
+.lang-400 {
+	background-color: #111522 !important;
+}
+.lang-401 {
+	background-color: #85ea2d !important;
+}
+.lang-402 {
+	background-color: #85ea2d !important;
+}
+.lang-403 {
+	background-color: #85ea2d !important;
+}
+.lang-404 {
+	background-color: #85ea2d !important;
+}
+.lang-405 {
+}
+.lang-406 {
+	background-color: #438eff !important;
+}
+.lang-407 {
+	background-color: #6866fb !important;
+}
+.lang-408 {
+	background-color: #ff0c5a !important;
+}
+.lang-409 {
+	background-color: #424893 !important;
+}
+.lang-410 {
+	background-color: #ef7a08 !important;
+}
+.lang-411 {
+	background-color: #60AFFE !important;
+}
+.lang-412 {
+	background-color: #cabbff !important;
+}
+.lang-413 {
+	background-color: #b0b77e !important;
+}
+.lang-414 {
+}
+.lang-415 {
+	background-color: #f7ede0 !important;
+}
+.lang-416 {
+	background-color: #7d9199 !important;
+}
+.lang-417 {
+	background-color: #85ea2d !important;
+}
+.lang-418 {
+	background-color: #85ea2d !important;
+}
+.lang-419 {
+	background-color: #ed2e2d !important;
+}
+.lang-420 {
+	background-color: #5ce600 !important;
+}
+.lang-421 {
+	background-color: #AA70FF !important;
+}
+.lang-422 {
+}
+.lang-423 {
+	background-color: #e5cd45 !important;
+}
+.lang-424 {
+	background-color: #476732 !important;
+}
+.lang-425 {
+	background-color: #77aa99 !important;
+}
+.lang-426 {
+}
+.lang-427 {
+	background-color: #cdd0e3 !important;
+}
+.lang-428 {
+	background-color: #fab738 !important;
+}
+.lang-429 {
+	background-color: #7055b5 !important;
+}
+.lang-430 {
+	background-color: #F7A8B8 !important;
+}
+.lang-431 {
+	background-color: #cc0000 !important;
+}
+.lang-432 {
+	background-color: #6600cc !important;
+}
+.lang-433 {
+	background-color: #f3ca0a !important;
+}
+.lang-434 {
+}
+.lang-435 {
+}
+.lang-436 {
+	background-color: #E3F171 !important;
+}
+.lang-437 {
+	background-color: #dbb284 !important;
+}
+.lang-438 {
+	background-color: #0d00ff !important;
+}
+.lang-439 {
+	background-color: #234d6b !important;
+}
+.lang-440 {
+	background-color: #C76F5B !important;
+}
+.lang-441 {
+	background-color: #0298c3 !important;
+}
+.lang-442 {
+	background-color: #4F5D95 !important;
+}
+.lang-443 {
+	background-color: #6067af !important;
+}
+.lang-444 {
+	background-color: #fcd7de !important;
+}
+.lang-445 {
+	background-color: #005390 !important;
+}
+.lang-446 {
+	background-color: #FFD343 !important;
+}
+.lang-447 {
+	background-color: #6b9543 !important;
+}
+.lang-448 {
+	background-color: #fbbd16 !important;
+}
+.lang-449 {
+	background-color: #336790 !important;
+}
+.lang-450 {
+	background-color: #dad8d8 !important;
+}
+.lang-451 {
+	background-color: #d80074 !important;
+}
+.lang-452 {
+	background-color: #ae81ff !important;
+}
+.lang-453 {
+}
+.lang-454 {
+	background-color: #f8bd00 !important;
+}
+.lang-455 {
+	background-color: #dc3a0c !important;
+}
+.lang-456 {
+	background-color: #da291c !important;
+}
+.lang-457 {
+	background-color: #6bac65 !important;
+}
+.lang-458 {
+	background-color: #8f0f8d !important;
+}
+.lang-459 {
+	background-color: #012456 !important;
+}
+.lang-460 {
+	background-color: #c8506d !important;
+}
+.lang-461 {
+	background-color: #0c344b !important;
+}
+.lang-462 {
+	background-color: #0096D8 !important;
+}
+.lang-463 {
+	background-color: #3B2F63 !important;
+}
+.lang-464 {
+	background-color: #74283c !important;
+}
+.lang-465 {
+	background-color: #de0000 !important;
+}
+.lang-466 {
+	background-color: #7fa2a7 !important;
+}
+.lang-467 {
+	background-color: #a86454 !important;
+}
+.lang-468 {
+	background-color: #302B6D !important;
+}
+.lang-469 {
+	background-color: #5a6986 !important;
+}
+.lang-470 {
+	background-color: #1D222D !important;
+}
+.lang-471 {
+	background-color: #ee1e10 !important;
+}
+.lang-472 {
+	background-color: #3572A5 !important;
+}
+.lang-473 {
+	background-color: #3572A5 !important;
+}
+.lang-474 {
+	background-color: #3572A5 !important;
+}
+.lang-475 {
+	background-color: #0040cd !important;
+}
+.lang-476 {
+	background-color: #fed659 !important;
+}
+.lang-477 {
+}
+.lang-478 {
+	background-color: #44a51c !important;
+}
+.lang-479 {
+	background-color: #00b841 !important;
+}
+.lang-480 {
+	background-color: #882233 !important;
+}
+.lang-481 {
+	background-color: #198CE7 !important;
+}
+.lang-482 {
+	background-color: #3c5caa !important;
+}
+.lang-483 {
+	background-color: #9d5200 !important;
+}
+.lang-484 {
+	background-color: #0000fb !important;
+}
+.lang-485 {
+	background-color: #77d9fb !important;
+}
+.lang-486 {
+	background-color: #fffaa0 !important;
+}
+.lang-487 {
+	background-color: #701516 !important;
+}
+.lang-488 {
+	background-color: #701516 !important;
+}
+.lang-489 {
+}
+.lang-490 {
+	background-color: #ff5847 !important;
+}
+.lang-491 {
+	background-color: #ff5847 !important;
+}
+.lang-492 {
+	background-color: #358a5b !important;
+}
+.lang-493 {
+	background-color: #0673ba !important;
+}
+.lang-494 {
+	background-color: #f50000 !important;
+}
+.lang-495 {
+}
+.lang-496 {
+	background-color: #009a00 !important;
+}
+.lang-497 {
+	background-color: #ff7f7f !important;
+}
+.lang-498 {
+}
+.lang-499 {
+	background-color: #ed5051 !important;
+}
+.lang-500 {
+	background-color: #141414 !important;
+}
+.lang-501 {
+	background-color: #d90e09 !important;
+}
+.lang-502 {
+	background-color: #FFDAB3 !important;
+}
+.lang-503 {
+	background-color: #2D54CB !important;
+}
+.lang-504 {
+	background-color: #A71E49 !important;
+}
+.lang-505 {
+	background-color: #198ce7 !important;
+}
+.lang-506 {
+	background-color: #00c0b5 !important;
+}
+.lang-507 {
+	background-color: #7c38f5 !important;
+}
+.lang-508 {
+	background-color: #ecdebe !important;
+}
+.lang-509 {
+	background-color: #ecdebe !important;
+}
+.lang-510 {
+	background-color: #a62c00 !important;
+}
+.lang-511 {
+	background-color: #cc0088 !important;
+}
+.lang-512 {
+	background-color: #DE3941 !important;
+}
+.lang-513 {
+}
+.lang-514 {
+	background-color: #2BDE21 !important;
+}
+.lang-515 {
+	background-color: #701516 !important;
+}
+.lang-516 {
+	background-color: #665a4e !important;
+}
+.lang-517 {
+	background-color: #dea584 !important;
+}
+.lang-518 {
+}
+.lang-519 {
+	background-color: #646464 !important;
+}
+.lang-520 {
+	background-color: #B34936 !important;
+}
+.lang-521 {
+	background-color: #a53b70 !important;
+}
+.lang-522 {
+	background-color: #c22d40 !important;
+}
+.lang-523 {
+	background-color: #bd181a !important;
+}
+.lang-524 {
+	background-color: #fdc700 !important;
+}
+.lang-525 {
+	background-color: #1e4aec !important;
+}
+.lang-526 {
+	background-color: #ca0f21 !important;
+}
+.lang-527 {
+	background-color: #c6538c !important;
+}
+.lang-528 {
+	background-color: #64b970 !important;
+}
+.lang-529 {
+	background-color: #0579aa !important;
+}
+.lang-530 {
+	background-color: #222c37 !important;
+}
+.lang-531 {
+	background-color: #89e051 !important;
+}
+.lang-532 {
+	background-color: #cecfcb !important;
+}
+.lang-533 {
+}
+.lang-534 {
+	background-color: #120F14 !important;
+}
+.lang-535 {
+}
+.lang-536 {
+	background-color: #C9BFED !important;
+}
+.lang-537 {
+	background-color: #64E6AD !important;
+}
+.lang-538 {
+	background-color: #007eff !important;
+}
+.lang-539 {
+	background-color: #003fa2 !important;
+}
+.lang-540 {
+	background-color: #2b2b2b !important;
+}
+.lang-541 {
+	background-color: #2379F4 !important;
+}
+.lang-542 {
+}
+.lang-543 {
+	background-color: #596706 !important;
+}
+.lang-544 {
+	background-color: #f0c040 !important;
+}
+.lang-545 {
+	background-color: #c44536 !important;
+}
+.lang-546 {
+	background-color: #c94949 !important;
+}
+.lang-547 {
+}
+.lang-548 {
+	background-color: #419179 !important;
+}
+.lang-549 {
+	background-color: #AA6746 !important;
+}
+.lang-550 {
+	background-color: #f69e1d !important;
+}
+.lang-551 {
+	background-color: #0C4597 !important;
+}
+.lang-552 {
+	background-color: #3F3F3F !important;
+}
+.lang-553 {
+	background-color: #e38c00 !important;
+}
+.lang-554 {
+	background-color: #e38c00 !important;
+}
+.lang-555 {
+	background-color: #800000 !important;
+}
+.lang-556 {
+	background-color: #348a34 !important;
+}
+.lang-557 {
+	background-color: #b2011d !important;
+}
+.lang-558 {
+	background-color: #dc566d !important;
+}
+.lang-559 {
+	background-color: #76d275 !important;
+}
+.lang-560 {
+	background-color: #1a5f91 !important;
+}
+.lang-561 {
+	background-color: #373b5e !important;
+}
+.lang-562 {
+	background-color: #3fb34f !important;
+}
+.lang-563 {
+	background-color: #ff6347 !important;
+}
+.lang-564 {
+	background-color: #9e0101 !important;
+}
+.lang-565 {
+	background-color: #2fcc9f !important;
+}
+.lang-566 {
+	background-color: #46390b !important;
+}
+.lang-567 {
+	background-color: #ff3e00 !important;
+}
+.lang-568 {
+	background-color: #ff9900 !important;
+}
+.lang-569 {
+	background-color: #00F58C !important;
+}
+.lang-570 {
+	background-color: #198ce7 !important;
+}
+.lang-571 {
+	background-color: #F05138 !important;
+}
+.lang-572 {
+}
+.lang-573 {
+	background-color: #DAE1C2 !important;
+}
+.lang-574 {
+	background-color: #333333 !important;
+}
+.lang-575 {
+	background-color: #e4cc98 !important;
+}
+.lang-576 {
+}
+.lang-577 {
+	background-color: #66D0DD !important;
+}
+.lang-578 {
+	background-color: #00004c !important;
+}
+.lang-579 {
+	background-color: #7b42bb !important;
+}
+.lang-580 {
+	background-color: #3D6117 !important;
+}
+.lang-581 {
+	background-color: #c8506d !important;
+}
+.lang-582 {
+	background-color: #ffe7ac !important;
+}
+.lang-583 {
+	background-color: #df66e4 !important;
+}
+.lang-584 {
+	background-color: #D12127 !important;
+}
+.lang-585 {
+	background-color: #A0AA87 !important;
+}
+.lang-586 {
+	background-color: #C40023 !important;
+}
+.lang-587 {
+	background-color: #4b0079 !important;
+}
+.lang-588 {
+	background-color: #c2c9fb !important;
+}
+.lang-589 {
+	background-color: #9c4221 !important;
+}
+.lang-590 {
+	background-color: #e38c00 !important;
+}
+.lang-591 {
+	background-color: #237346 !important;
+}
+.lang-592 {
+	background-color: #3178c6 !important;
+}
+.lang-593 {
+	background-color: #cf142b !important;
+}
+.lang-594 {
+	background-color: #c1d026 !important;
+}
+.lang-595 {
+	background-color: #0178b8 !important;
+}
+.lang-596 {
+	background-color: #3178c6 !important;
+}
+.lang-597 {
+	background-color: #239dad !important;
+}
+.lang-598 {
+	background-color: #4e3617 !important;
+}
+.lang-599 {
+	background-color: #222c37 !important;
+}
+.lang-600 {
+}
+.lang-601 {
+	background-color: #9933cc !important;
+}
+.lang-602 {
+	background-color: #a54c4d !important;
+}
+.lang-603 {
+	background-color: #ccccee !important;
+}
+.lang-604 {
+	background-color: #4f87c4 !important;
+}
+.lang-605 {
+	background-color: #a56de2 !important;
+}
+.lang-606 {
+	background-color: #f26025 !important;
+}
+.lang-607 {
+	background-color: #867db1 !important;
+}
+.lang-608 {
+	background-color: #15dcdc !important;
+}
+.lang-609 {
+	background-color: #ee2647 !important;
+}
+.lang-610 {
+	background-color: #148AA8 !important;
+}
+.lang-611 {
+	background-color: #507cff !important;
+}
+.lang-612 {
+	background-color: #b2b7f8 !important;
+}
+.lang-613 {
+	background-color: #adb2cb !important;
+}
+.lang-614 {
+	background-color: #199f4b !important;
+}
+.lang-615 {
+	background-color: #199f4b !important;
+}
+.lang-616 {
+	background-color: #199f4b !important;
+}
+.lang-617 {
+	background-color: #945db7 !important;
+}
+.lang-618 {
+	background-color: #2c6353 !important;
+}
+.lang-619 {
+	background-color: #1F1F1F !important;
+}
+.lang-620 {
+	background-color: #41b883 !important;
+}
+.lang-621 {
+	background-color: #2980b9 !important;
+}
+.lang-622 {
+	background-color: #42f1f4 !important;
+}
+.lang-623 {
+	background-color: #5b70bd !important;
+}
+.lang-624 {
+	background-color: #04133b !important;
+}
+.lang-625 {
+	background-color: #6250e7 !important;
+}
+.lang-626 {
+}
+.lang-627 {
+	background-color: #1a5e9a !important;
+}
+.lang-628 {
+	background-color: #d5c397 !important;
+}
+.lang-629 {
+	background-color: #fc5757 !important;
+}
+.lang-630 {
+	background-color: #52d5ff !important;
+}
+.lang-631 {
+	background-color: #7582D1 !important;
+}
+.lang-632 {
+	background-color: #ff0000 !important;
+}
+.lang-633 {
+	background-color: #a23738 !important;
+}
+.lang-634 {
+	background-color: #f7e43f !important;
+}
+.lang-635 {
+	background-color: #383838 !important;
+}
+.lang-636 {
+	background-color: #4B6BEF !important;
+}
+.lang-637 {
+	background-color: #403a40 !important;
+}
+.lang-638 {
+	background-color: #99DA07 !important;
+}
+.lang-639 {
+	background-color: #0060ac !important;
+}
+.lang-640 {
+	background-color: #0060ac !important;
+}
+.lang-641 {
+	background-color: #81bd41 !important;
+}
+.lang-642 {
+	background-color: #285EEF !important;
+}
+.lang-643 {
+}
+.lang-644 {
+	background-color: #5232e7 !important;
+}
+.lang-645 {
+}
+.lang-646 {
+	background-color: #EB8CEB !important;
+}
+.lang-647 {
+	background-color: #24255d !important;
+}
+.lang-648 {
+	background-color: #4B6C4B !important;
+}
+.lang-649 {
+	background-color: #cb171e !important;
+}
+.lang-650 {
+	background-color: #220000 !important;
+}
+.lang-651 {
+	background-color: #32AB90 !important;
+}
+.lang-652 {
+	background-color: #794932 !important;
+}
+.lang-653 {
+	background-color: #0d665e !important;
+}
+.lang-654 {
+}
+.lang-655 {
+	background-color: #00BCD1 !important;
+}
+.lang-656 {
+	background-color: #118f9e !important;
+}
+.lang-657 {
+	background-color: #ec915c !important;
+}
+.lang-658 {
+	background-color: #dc75e5 !important;
+}
+.lang-659 {
+	background-color: #d67711 !important;
 }
