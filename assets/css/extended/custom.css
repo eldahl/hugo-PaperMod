@@ -34,6 +34,12 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     }
 }
 
+@media screen and (max-width: 376px) {
+    .gp-follow {
+        width: 68px !important;
+    }
+}
+
 .logo {
     width: 100%;
     justify-content: space-between;
@@ -149,14 +155,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 .github-pinner.gp-profile {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 
-
-  background-color: var(--entry);
-  border: 1px solid var(--border);
-  padding: 15px;
-  border-radius: var(--radius);
+    background-color: var(--entry);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: var(--radius);
     box-shadow: 0 4px 6px 1px rgba(var(--primary-rgb), var(--box-shadow-alpha));
 }
 
@@ -258,8 +263,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 
 .github-pinner #gp-container-profile > .gp-stats {
-  display: block;
-  margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .github-pinner #gp-container-profile > .gp-stats .gp-stat {
