@@ -4,11 +4,11 @@
 {{ $href := .projectData.href }}
 {{ if $jsonFile }}
     {{ $repoData := $jsonFile.Content | transform.Unmarshal }}
-<div data="{{ $href }}" class="github-pinner flat gp-repo" style="visibility: visible;">
+    <div data="{{ $href }}" class="github-pinner flat gp-repo" style="visibility: visible;">
         {{ with $repoData }}
         <div id="gp-container-repo">
-        <a class="gp-title" href="{{ $href }}">{{ .name }}</a>
-        <p class="gp-desc">{{ .description }}</p>
+            <a class="gp-title" href="{{ $href }}">{{ .name }}</a>
+            <p class="gp-desc">{{ .description }}</p>
             <div id="gp-stats">
                 <p class="gp-stat">
                 <span class="gp-lang {{ index $languages .language }}"></span>

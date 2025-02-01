@@ -27,10 +27,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
         --gallery-flexbox-justify: center;
         --projects-height: calc(90vw - 1rem);
     }
-    
+
     .project {
         margin-top: var(--gap);
         max-width: var(--projects-width-base);
+        flex-basis: 100% !important;
     }
 }
 
@@ -66,12 +67,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     flex-wrap: wrap;
     align-items: center;
     row-gap: var(--gap);
+    column-gap: var(--gap);
 }
 
 .project {
     background-color: var(--entry);
     border-radius: var(--radius);
-    flex-basis: 100%;
+    flex-basis: calc(50% - var(--gap) / 2);
     display: flex;
     box-shadow: 0 4px 6px 1px rgba(var(--primary-rgb), var(--box-shadow-alpha));
     overflow: hidden;
