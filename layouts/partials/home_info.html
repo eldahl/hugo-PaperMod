@@ -25,6 +25,13 @@
             <!--<div data="{{ .href }}" class="github-pinner flat" style="visibility: hidden;"></div>-->
         </div>
         {{- end}}
+        {{ $headers := dict "User-Agent" "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" }}
+        {{ $resp := resources.GetRemote "https://api.github.com/rate_limit" (dict "headers" $headers) }}
+        {{ if $resp }}
+            {{ $json := $resp.Content | transform.Unmarshal }}
+            {{ $rateLimitRequestsLeft := $json.rate.remaining }}
+            {{ warnf "Rate Limit: %#v" $rateLimitRequestsLeft }}
+        {{ end }}
     </div>
     <footer class="entry-footer">
         {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}

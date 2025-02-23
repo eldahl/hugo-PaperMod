@@ -3,8 +3,6 @@
 {{ $jsonFile := resources.GetRemote .projectData.apiHref (dict "headers" $headers) }}
 {{ $href := .projectData.href }}
 {{ if $jsonFile }}
-    {{ $rateLimitRequestsLeft := index (index $jsonFile.Data.Headers "x-ratelimit-remaining") 0 }}
-    {{ warnf "Rate Limit: %#v" $rateLimitRequestsLeft }}
     {{ $repoData := $jsonFile.Content | transform.Unmarshal }}
     <div data="{{ $href }}" class="github-pinner flat gp-repo" style="visibility: visible;">
         {{ with $repoData }}
